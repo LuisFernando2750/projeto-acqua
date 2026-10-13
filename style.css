@@ -27,6 +27,10 @@ body {
     font-family: var(--fonte-primaria);
     background-color: var(--cor-principal);
 }
+.section-contador, .novidades {
+    height: 90dvh;
+    width: 100%;
+}
 
 .section-contador {
     background-image: url(./img/predio2.png);
@@ -34,7 +38,7 @@ body {
     background-size: 100%;
     background-position: center;
 
-    height: 80dvh;
+    
     /* 
 80 = 80%
 dynamic = dinâmico
@@ -82,7 +86,6 @@ height= altura
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80dvh;
     background-color: var(--cor-secundaria);
     text-align: center;
     padding: 1rem;
@@ -124,6 +127,8 @@ visuallyhidden {
 
 .novidades form {
     width: 100%;
+    max-width: 25.5rem;
+
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -157,4 +162,39 @@ button {
 .andamento h2{
     font-size: 2rem;
     margin-bottom: 2rem;
+}
+
+.andamento p{
+    margin-top: .5rem;
+    margin-bottom: 2rem;
+}
+
+ul{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+img{
+    max-width: 100%;
+    transition: all 200ms;
+}
+
+img:hover{
+    transform: scale(1.05);
+}
+
+@media (min-width: 744px) {
+    ul{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+} 
+
+@media (min-width: 1280px) {
+    body {
+        background-color: red;
+    }
+
+    .container{
+        display: flex;
+    }
 }
