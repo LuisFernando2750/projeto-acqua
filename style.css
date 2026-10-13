@@ -177,7 +177,8 @@ ul{
 img{
     max-width: 100%;
     transition: all 200ms;
-}
+} 
+
 
 img:hover{
     transform: scale(1.05);
