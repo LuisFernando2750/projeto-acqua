@@ -153,6 +153,9 @@ button {
     font-weight: 600;
     color: var(--cor-principal);
 }
+button:hover{
+    background: #0d496e;
+}
 
 .andamento {
     padding: 4.75rem 1rem;
